@@ -1,8 +1,10 @@
 import "./App.css";
+import LoginForm from "./components/LoginForm";
 
 function App() {
   return (
     <div className="App">
+      <LoginForm />
       <section class="hero">
         <div class="hero-body">
           <p class="title">A React Task</p>
