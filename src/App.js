@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 function App() {
-  const [counter,setCounter] = useState(1);
+  const [counter, setCounter] = useState(1);
+  // useEffect executes when page loads and anytime dependancy (counter) changes
   useEffect(() => {
     document.title = `Count (${counter})`
-  },[counter])
+  }, [counter])
+  
   return (
     <div className="App">
       <section className="hero">
