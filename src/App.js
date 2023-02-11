@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Document from "./Document";
+import Document from "./components/Document";
 
 function App() {
   const [text, setText] = useState("");
