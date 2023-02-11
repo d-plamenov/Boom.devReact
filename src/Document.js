@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 
 const Document = ({ title, content }) => {
     const [complete, setComplete] = useState(false)
@@ -9,7 +9,7 @@ const Document = ({ title, content }) => {
         }
     }
     return (
-        <Fragment>
+        <>
             <h1 className="title">{title}</h1>
             <div className="content" onScroll={handleScroll} style={{
                 "overflow": "scroll",
@@ -17,7 +17,7 @@ const Document = ({ title, content }) => {
                 "height": "500px"
             }}>{content}</div>
             <button disabled={!complete}>I Agree</button>
-        </Fragment>
+        </>
     )
 }
 
