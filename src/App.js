@@ -1,14 +1,10 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 function App() {
-  const [counter,setCounter] = useState(0);
+  const [counter,setCounter] = useState(1);
   useEffect(() => {
-    setCounter((prevState) => {
-      const newState = prevState + 1;
-      return newState;
-    })
-    document.title = `Counter(${counter})`
-  },[])
+    document.title = `Count (${counter})`
+  },[counter])
   return (
     <div className="App">
       <section className="hero">
